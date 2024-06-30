@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .view.active{display:block;}
-        .view{display:none;}
-    </style>
 </head>
 <body>
-   <button type="button" aria-selected="true" data-tab="layer-01-01">
-    	<span>btn1</span>
-    </button>
-    <button type="button" aria-selected="true" data-tab="layer-01-02">
-    	<span>btn2</span>
-    </button>
-    <div id="layer01-01" class="view active">
-    	layer-01-01
+   <div id="jb-container">
+      <div id="jb-header">
+        <h1>3-Column Layout</h1>
+      </div>
+      <div id="jb-sidebar-left">
+        <h2>Sidebar</h2>
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dolor</li>
+        </ul>
+      </div>
+      <div id="jb-content">
+        <h2>Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+      </div>
+      <div id="jb-sidebar-right">
+        <h2>Sidebar</h2>
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dolor</li>
+        </ul>
+      </div>
+      <div id="jb-footer">
+        <p>Copyright</p>
+      </div>
     </div>
-    <div id="layer-01-02" class="view">
-    	layer-01-02
-    </div>
-    <script>
-        $(document).on('click', '*[data-tab]', function(){
-        	var target = $(this).attr('data-tab')
-        	$(this).attr('aria-selected', 'true').siblings('button').attr('aria-selected', 'false');
-        	$('#' + target).addClass('active').siblings('.view').removeClass('active');
-        });
-    </script>
 </body>
 </html>
