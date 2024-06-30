@@ -6,7 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    asdqweqwecqwecasdcasdcd
-    koekqwecqlwiecsalkmckssmcl
+   <div>
+    	<button type="button" aria-selected="true" data-tab="layer-01-01">
+    		<span>btn1</span>
+    	</button>
+    	<button type="button" aria-selected="true" data-tab="layer-01-02">
+    		<span>btn2</span>
+    	</button>
+    </div>
+    <script>
+        $(document).on('click', '*[data-tab]', function(){
+        $(this).attr('aria-selected', 'true').siblings('button').attr('aria-selected', 'false');
+        });
+    </script>
 </body>
 </html>
