@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .view.active{display:block;}
+        .view{display:none;}
+    </style>
 </head>
 <body>
-   <div>
-    	<button type="button" aria-selected="true" data-tab="layer-01-01">
-    		<span>btn1</span>
-    	</button>
-    	<button type="button" aria-selected="true" data-tab="layer-01-02">
-    		<span>btn2</span>
-    	</button>
+   <button type="button" aria-selected="true" data-tab="layer-01-01">
+    	<span>btn1</span>
+    </button>
+    <button type="button" aria-selected="true" data-tab="layer-01-02">
+    	<span>btn2</span>
+    </button>
+    <div id="layer01-01" class="view active">
+    	layer-01-01
+    </div>
+    <div id="layer-01-02" class="view">
+    	layer-01-02
     </div>
     <script>
         $(document).on('click', '*[data-tab]', function(){
-        $(this).attr('aria-selected', 'true').siblings('button').attr('aria-selected', 'false');
+        	var target = $(this).attr('data-tab')
+        	$(this).attr('aria-selected', 'true').siblings('button').attr('aria-selected', 'false');
+        	$('#' + target).addClass('active').siblings('.view').removeClass('active');
         });
     </script>
 </body>
