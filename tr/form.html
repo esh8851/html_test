@@ -9,7 +9,7 @@
         table{width:100%;}
         table, th, td{text-align:center;}
         select{width:177px;}
-        .total{display:flex;justify-content:space-between;}
+        .total{width:100%;display:flex;justify-content:space-between;}
         .btn-list{display:flex;justify-content:space-between;}
         .btn-page{text-align:center;margin-top:30px;}
     </style>
@@ -41,12 +41,14 @@
         </div>
         <table>
             <tr>
-                <div class="total">
-                    <span>Total: 171</span>
-                    <select name="" id="">
-                        <option value="">5</option>
-                    </select>
-                </div>
+                <td colspan="12">
+                    <div class="total">
+                        <span>Total: 171</span>
+                        <select name="" id="">
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <th>
@@ -278,7 +280,7 @@
             </tr>
         </table>
         <div class="btn-page">
-            <input type="radio">
+            <input type="radio" checked>
             <input type="radio">
             <input type="radio">
             <input type="radio">
