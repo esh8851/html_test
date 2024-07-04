@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        a{text-decoration:none;}
+        a:visited{color:#000;}
         div{margin:7px;}
         table{width:100%;}
         table, th, td{text-align:center;}
@@ -12,6 +14,9 @@
         .total{width:100%;display:flex;justify-content:space-between;}
         .btn-list{display:flex;justify-content:space-between;}
         .btn-page{text-align:center;margin-top:30px;}
+        .btn-page label{width:30px;height:30px;cursor:pointer;display:inline-block;}
+        input[type='radio']{display:none;}
+        input[type='radio']:checked + label{background:red;}
     </style>
 </head>
 <body>
@@ -280,11 +285,13 @@
             </tr>
         </table>
         <div class="btn-page">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+            
+            <input type="radio" name="table-page" id="radio01">
+            <label for="radio01">1</label>
+            <input type="radio" name="table-page">
+            <input type="radio" name="table-page">
+            <input type="radio" name="table-page">
+            <input type="radio" name="table-page">
         </div>
         <div class="btn-list">
             <div>
