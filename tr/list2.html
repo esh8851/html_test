@@ -8,57 +8,84 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../image/1000_F_573521624_5x8rdYbDCrejLePJEurCoscAa7YZ9OLT.jpg" alt="Logo" width="30" height="24"
-              class="d-inline-block align-text-top">
-            Bootstrap
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
+      <div class="row border-bottom"> <!-- nav -->
+        <div class="col-4 m-0 pt-1">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../image/1000_F_573521624_5x8rdYbDCrejLePJEurCoscAa7YZ9OLT.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+              </a>
+            </div>
+          </nav>
         </div>
-      </nav>
+        <div class="col-4 m-0 pt-1">
+          <form class="d-flex pt-2" role="search">
+            <input class="form-control rounded-pill me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+        <div class="col-4 m-0 p-0">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-3"> <!-- left -->
+        <div class="col-3 p-0"> <!-- left -->
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+                    viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                  </svg>
+                  &nbsp;Home
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-                  adds
-                  the appropriate classes that we use to style each element. These classes control the overall appearance, as
-                  well
-                  as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -66,20 +93,23 @@
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                  </svg>
+                  &nbsp;E commerce
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,363 +117,430 @@
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                  </svg>
+                  &nbsp;CRM
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                  </svg>
+                  &nbsp;Project management
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                  </svg>
+                  &nbsp;chat
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="accordion-body">
+                    <div class="list-group list-group-flush">
+                      <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                      <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                      <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                          class="badge text-bg-primary">New</span></button>
+                      <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  &nbsp;email
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="accordion-body">
+                    <div class="list-group list-group-flush">
+                      <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                      <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                      <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                          class="badge text-bg-primary">New</span></button>
+                      <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                  </svg>
+                  &nbsp;Events
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-kanban"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path
+                      d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z" />
+                  </svg>
+                  &nbsp;Kanban
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
+                  </svg>
+                  &nbsp;Social
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                  </svg>
+                  &nbsp;Calendar
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-                  adds the appropriate classes that we use to style each element. These classes control the overall
-                  appearance,
-                  as
-                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                  our
-                  default variables. It's also worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action active">E commerce</button>
+                    <button type="button" class="list-group-item list-group-item-action">Project management</button>
+                    <button type="button" class="list-group-item list-group-item-action">CRM&nbsp;<span
+                        class="badge text-bg-primary">New</span></button>
+                    <button type="button" class="list-group-item list-group-item-action">Social feed</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col"> <!-- right -->
-          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Library</li>
-            </ol>
-          </nav>
-          <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
-          <div class="row mb-3">
-            <div class="col-2">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="col-2">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="col-2">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="col-2">
-              <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-            </div>
-            <div class="col-2">
-              <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="col-2">
-              <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary" type="submit">Button</button>
-              <button class="btn btn-primary" type="submit">Button</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row g-3 align-items-center">
-              <div class="col-10">
-                <label for="inputPassword6" class="col-form-label">Total</label>
-              </div>
-              <div class="col">
+        <div class="col bg-light p-0"> <!-- right -->
+          <div class="border-bottom p-3 ps-4">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><b>Page1</b></a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><b>Page2</b></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><b>Default</b></li>
+              </ol>
+            </nav>
+            <h1 class="mb-4"><b>Code</b></h1></h1>
+            <div class="row mb-3">
+              <div class="col-2">
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
+                  <option selected>N</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Y</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>수정일</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <input class="form-control" type="text" placeholder="2024-06-05" aria-label="default input example">
+              </div>
+              <div class="col-2">
+                <input class="form-control" type="text" placeholder="2024-07-05" aria-label="default input example">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>검색구분</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <input class="form-control" type="text" placeholder="검색어" aria-label="default input example">
+              </div>
+              <div class="col-2">
+                <button class="btn btn-outline-dark pt-1" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </button>
+                <button class="btn btn-outline-dark pt-1" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border-bottom px-3">
+            <div class="row border-bottom mx-1 py-1">
+              <div class="col-10 px-0">
+                <label for="inputPassword6" class="col-form-label">Total:&nbsp;<span>171</span></label>
+              </div>
+              <div class="col px-0">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>5</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">
-                      <input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input">
-                    </th>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input"></th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input"></th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input"></th>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input"></th>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
-                        aria-label="Checkbox for following text input"></th>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="row">
+              <div class="col">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input">
+                      </th>
+                      <th scope="col">#</th>
+                      <th scope="col">코드그룹 코드</th>
+                      <th scope="col">코드그룹 이름</th>
+                      <th scope="col">코드</th>
+                      <th scope="col">대체 코드</th>
+                      <th scope="col">코드 이름</th>
+                      <th scope="col">코드 이름(영문)</th>
+                      <th scope="col">사용</th>
+                      <th scope="col">순서</th>
+                      <th scope="col">등록일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input"></th>
+                      <td>171</td>
+                      <td>57</td>
+                      <td>테테테</td>
+                      <td>278</td>
+                      <td></td>
+                      <td class="text-primary"><b>ㅁㄴㅇㄹ</b></td>
+                      <td></td>
+                      <td>Y</td>
+                      <td>1</td>
+                      <td>2023-10-10&nbsp;16:02:31&nbsp;&nbsp;&nbsp;20</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input"></th>
+                      <td>170</td>
+                      <td>57</td>
+                      <td>로그인,로그인UI</td>
+                      <td>272</td>
+                      <td></td>
+                      <td class="text-primary"><b>사용자</b></td>
+                      <td></td>
+                      <td>Y</td>
+                      <td>1</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input"></th>
+                      <td>169</td>
+                      <td>33</td>
+                      <td>로그인,로그인UI</td>
+                      <td>273</td>
+                      <td></td>
+                      <td class="text-primary"><b>관리자</b></td>
+                      <td></td>
+                      <td>Y</td>
+                      <td>2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input"></th>
+                      <td>168</td>
+                      <td>32</td>
+                      <td>qna,타입</td>
+                      <td>266</td>
+                      <td></td>
+                      <td class="text-primary"><b>기타</b></td>
+                      <td></td>
+                      <td>Y</td>
+                      <td>1</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><input class="form-check-input mt-0" type="checkbox" value=""
+                          aria-label="Checkbox for following text input"></th>
+                      <td>167</td>
+                      <td>31</td>
+                      <td>qna,상태</td>
+                      <td>262</td>
+                      <td></td>
+                      <td class="text-primary"><b>미확인</b></td>
+                      <td></td>
+                      <td>Y</td>
+                      <td>1</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4">
+                <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="primary-outlined">1</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="secondary-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="secondary-outlined">2</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="success-outlined">3</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="danger-outlined">4</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="radio01-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="radio01-outlined">5</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="radio02-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="radio02-outlined">〉</label>
+              </div>
+              <div class="col-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-10 mb-5">
+                <button class="btn btn-danger pt-1" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+                </button>
+                <button class="btn btn-danger pt-1" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn btn-success pt-1" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-excel" viewBox="0 0 16 16">
+                    <path d="M5.884 6.68a.5.5 0 1 0-.768.64L7.349 10l-2.233 2.68a.5.5 0 0 0 .768.64L8 10.781l2.116 2.54a.5.5 0 0 0 .768-.641L8.651 10l2.233-2.68a.5.5 0 0 0-.768-.64L8 9.219l-2.116-2.54z"/>
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                  </svg>
+                </button>
+                <button class="btn btn-primary pt-1" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-              <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" for="primary-outlined">1</label>
-              <input type="radio" class="btn-check" name="options-outlined" id="secondary-outlined" autocomplete="off">
-              <label class="btn btn-outline-primary" for="secondary-outlined">2</label>
-              <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
-              <label class="btn btn-outline-primary" for="success-outlined">3</label>
-              <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-              <label class="btn btn-outline-primary" for="danger-outlined">4</label>
-              <input type="radio" class="btn-check" name="options-outlined" id="radio01-outlined" autocomplete="off">
-              <label class="btn btn-outline-primary" for="radio01-outlined">5</label>
-              <input type="radio" class="btn-check" name="options-outlined" id="radio02-outlined" autocomplete="off">
-              <label class="btn btn-outline-primary" for="radio02-outlined">></label>
-            </div>
-            <div class="col-4"></div>
-          </div>
-          <div class="row">
-            <div class="col-10">
-              <button class="btn btn-primary" type="submit">Button</button>
-              <button class="btn btn-primary" type="submit">Button</button>
-            </div>
-            <div class="col">
-              <button class="btn btn-primary" type="submit">Button</button>
-              <button class="btn btn-primary" type="submit">Button</button>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
